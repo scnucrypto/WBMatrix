@@ -4,7 +4,7 @@ PROJECT(WBMatrix)
 
 include_directories(include)
 
-aux_source_directory(src WBM_SRC)
+aux_source_directory(src/WBMatrix WBM_SRC)
 
 add_library(WB_LIB ${WBM_SRC})
 
