@@ -6,11 +6,19 @@ Implementations
 Contains the matrix operations related to the white-box block cipher implementation and provides thorough test cases for their performance and accuracy. The test cases also include the Chow et al.'s [white-box AES](https://link.springer.com/chapter/10.1007/3-540-36492-7_17) and Xiao-Lai's [white-box SM4](http://gb.oversea.cnki.net/KCMS/detail/detailall.aspx?filename=2010204831.nh&dbcode=CMFD&dbname=CMFD2010) implementations built by WBMatrix, [NTL](https://www.shoup.net/ntl/), and [M4RI](https://github.com/malb/m4ri), respectively.
 
 ## Applications
-1. [CEJO White box AES](https://github.com/Nexus-TYF/CEJO-whitebox-AES)
+1. [CEJO White-box AES](https://github.com/Nexus-TYF/CEJO-whitebox-AES)
 
 2. [Table Redundancy Method for White-box AES](https://github.com/Nexus-TYF/Table-Redundancy-Method-for-White-box-AES)
 
-3. [Xiao Lai White-box SM4](https://github.com/Nexus-TYF/Xiao-Lai-White-box-SM4)
+3. [Xiao-Lai White-box SM4](https://github.com/Nexus-TYF/Xiao-Lai-White-box-SM4)
+
+4. [Xiao-Lai White-box AES](https://github.com/Nexus-TYF/Xiao-Lai-White-box-AES)
+
+## Clone
+
+```
+$ git clone --depth 1 https://github.com/Nexus-TYF/WBMatrix
+```
 
 ## Matrix Library
 
@@ -80,9 +88,10 @@ Revision 1a). <br>
 
 * **Accuracy_test.c** Accuracy test for the matrix operations in WBMatrix.<br>
 * **BasisMatrixMethod_test.c** Performance test for the generation of pairwise invertible matrices by Basis Matrix Method.<br>
-* **RGEMethod_test.c** Performance test for the generation of pairwise invertible matrices by [Reverse Gaussian Elimination Method](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/MSV4017.pdf).<br>
-* **RLUDMethod_test.c** Performance test for the generation of pairwise invertible matrices by [Reverse LU Decomposition Method](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/MSV4017.pdf).<br>
-* **BasisMatrixMethod_test.c** Performance test for the generation of pairwise invertible matrices by Randomly Generate and Verify Method.<br>
+* **LowMCMethod_text.cpp** Performance test for the generation of pairwise invertible matrices by [LowMC Method](https://eprint.iacr.org/2016/687) and Gaussian Elimination method.<br>
+* **RGEMethod_test.c** Performance test for the generation of pairwise invertible matrices by [Reverse Gaussian Elimination Method](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/MSV4017.pdf) and Gaussian Elimination method.<br>
+* **RLUDMethod_test.c** Performance test for the generation of pairwise invertible matrices by [Reverse LU Decomposition Method](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/MSV4017.pdf) and Gaussian Elimination method.<br>
+* **WBGEMethod_test.c** Performance test for the generation of pairwise invertible matrices by Randomly Generate and Verify Method and Gaussian Elimination method.<br>
 * **WBMatrixMatOp_test.c** Performance test for the matrix operations in WBMatrix.<br>
 * **WBMatrixMethod_test.c** Performance test for the generation of pairwise invertible matrices by WBMatrix Method.<br>
 
@@ -114,10 +123,11 @@ $ ./WBMM
 9. [InvertibleMatrix](https://github.com/liuyunhao13467/InvertibleMatrix.git)<br>
 10. [Inverse-of-Matrix](https://github.com/kay-max/Inverse-of-Matrix.git)<br>
 11. [inverseMatrix](https://github.com/braindrillmd/inverseMatrix.git)<br>
+12. [lowmc](https://github.com/LowMC/lowmc)<br>
 
 ---
-Last Updated : 2020/08/01<br>
-Modified By : Nexus
+Last Updated : 2020/08/24<br>
+WBMatrix Version: 3.2.0
 
 ---
 Details of update:<br>
@@ -256,4 +266,15 @@ Revision 1a).<br>
 
 (2020/08/01)<br>
 1. New: Support for 4-bit matrix operations.<br>
-2. New: Add 8to64, 8to128, 16to64, 32to128 concatenation functions.<br>
+2. New: Add 8to64, 8to128, 16to64, 32to128, 16to128 concatenation functions.<br>
+
+(2020/08/09)<br>
+1. Fixed: Errors of comments in misc.c.<br>
+2. New: Add 4-bit test cases.<br>
+
+(2020/08/10)<br>
+1. NEW: Supports for C++.<br>
+2. NEW: Add LowMC Method.<br>
+
+(2020/08/24)<br>
+1. Fixed: Free from C99.<br>
