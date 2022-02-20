@@ -5,9 +5,9 @@ Implementations.
 
 Contains the matrix operations related to the white-box block cipher implementation and provides thorough test cases for their performance and accuracy. The test cases also include the Chow et al.'s [white-box AES](https://link.springer.com/chapter/10.1007/3-540-36492-7_17) and Xiao-Lai's [white-box SM4](http://gb.oversea.cnki.net/KCMS/detail/detailall.aspx?filename=2010204831.nh&dbcode=CMFD&dbname=CMFD2010) implementations built by WBMatrix, [NTL](https://www.shoup.net/ntl/), and [M4RI](https://github.com/malb/m4ri), respectively.
 
-This repository is relevant to the paper "WBMatrix: An Optimized Matrix Library for White-Box Block Cipher Implementations" by Yufeng Tang, Zheng Gong, Tao Sun, Jinhai Chen and Zhe Liu.
+A preview version was released at [Nexus-TYF/WBMatrix](https://github.com/Nexus-TYF/WBMatrix). But this repository is the latest version of WBMatrix and is relevant to the paper "WBMatrix: An Optimized Matrix Library for White-Box Block Cipher Implementations" by Yufeng Tang, Zheng Gong, Tao Sun, Jinhai Chen and Zhe Liu in IEEE Transactions on Computers.
 
-DOI: [10.1109/TC.2022.3152449](https://doi.org/10.1109/TC.2022.3152449)
+DOI: [10.1109/TC.2022.3152449](https://doi.org/10.1109/TC.2022.3152449).
 
 ## Applications
 1. [CEJO White-box AES](https://github.com/Nexus-TYF/CEJO-whitebox-AES)
@@ -27,7 +27,7 @@ DOI: [10.1109/TC.2022.3152449](https://doi.org/10.1109/TC.2022.3152449)
 ## Clone
 
 ```
-$ git clone --depth 1 https://github.com/Nexus-TYF/WBMatrix
+$ git clone https://github.com/scnucrypto/WBMatrix.git
 ```
 
 ## Matrix Library
